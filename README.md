@@ -25,7 +25,7 @@ Release Instant Datasets are useful when your ephemeral test environments requir
 
 By meeting these criteria, Release Instant Datasets allow customers to:
 
-* improve test reliability by mirroring production as closely as possible and providing consistent test results
+* improve test reliability by closely mirroring production
 * avoid noisy neighbors that are inherent with shared infrastructure
 * avoid false-negative test failures due to unexpected data or schema changes
 
