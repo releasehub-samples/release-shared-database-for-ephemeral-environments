@@ -40,7 +40,7 @@ However, you can create your own shared database for your ephemeral environments
 
 The diagram and subsequent discussion below provides an example of how you could build a shared Amaon RDS database for your ephemeral Release environments using AWS CloudFormation and AWS Secrets Manager:
 
-![](aws-example-diagram.png)
+![](images/aws-example-diagram.png)
 
 See below for additional explanation: 
 
