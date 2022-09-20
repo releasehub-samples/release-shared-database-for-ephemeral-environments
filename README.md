@@ -39,11 +39,13 @@ The following sections give an overview of setting up AWS VPC networking for a s
 
 This diagram gives a high-level overview of the AWS architecture needed to share an RDS database between multiple ReleaseHub environments when the database is in the same VPC as the ReleaseHub EKS cluster:
 
+<img src="./images/rds-same-vpc.png" width="700px"/>
+
 #### Prerequisites
 
-1. You've already created a database (e.g. manually, or with your own CloudFormation) in the same VPC as the ReleaseHub-managed cluster containing environments that will connect to it. 
+1. You've already created a database (e.g. manually, or with your own CloudFormation) in the same VPC as the ReleaseHub-managed cluster containing environments that will connect to it.
 
-2. Make note of the RDS DNS endpoint, username, and password, you'll need this later. 
+2. Make note of the RDS DNS endpoint, username, and password, you'll need this later.
 
 3. Optional - ReleaseHub CLI and kubectl CLI
 
@@ -66,7 +68,10 @@ This diagram gives a high-level overview of the AWS architecture needed to share
 
 ### Shared RDS Database in different VPC from ReleaseHub EKS cluster
 
-this diagram gives a high-level overview of the AWS architecture needed to share an RDS database between multiple ReleaseHub environments.
+this diagram gives a high-level overview of the AWS architecture needed to share an RDS database between multiple ReleaseHub environments:
+
+<img src="./images/rds-different-vpc.png" width="700px"/>
+
 
 #### Prerequisites
 
@@ -90,7 +95,7 @@ this diagram gives a high-level overview of the AWS architecture needed to share
 
 The diagram and subsequent discussion below provides an example of how you could build a shared Amaon RDS database for your ephemeral ReleaseHub environments using AWS CloudFormation and AWS Secrets Manager:
 
-![secrets-manager](images/aws-example-diagram.png)
+![secrets-manager](images/secrets-manager.png)
 
 See below for additional explanation:
 
